@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="new.portstyle.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+       
+
+        /* Portfolio Section */
+        .portfolio-space {
+            max-width: 1200px;
+            margin: 2rem auto;
+            text-align: center;
+        }
+
+        #poort {
+            font-size: 2rem;
+            color: #0078D7;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            color: #333;
+            margin: 2rem 0 1rem;
+        }
+
+        .-port-logo, .-port-brand, .-port-ui, .-port-web, .-port-product {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .-port-logo img, .-port-brand img, .-port-ui img, .-port-web img, .-port-product img {
+            width: calc(33.333% - 1rem);
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .-port-logo img:hover, .-port-brand img:hover, .-port-ui img:hover, .-port-web img:hover, .-port-product img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .-port-logo img, .-port-brand img, .-port-ui img, .-port-web img, .-port-product img {
+                width: calc(50% - 1rem);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .-port-logo img, .-port-brand img, .-port-ui img, .-port-web img, .-port-product img {
+                width: 100%;
+            }
+
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="--nav-bar">
+        <h2 id="mylogo">Abdul Muiz</h2>
+        <div class="togo">
+            <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+        </div>
+        <ul class="menume">
+            <li>
+                <a href="new.index.html">Home</a>
+                <a href="new.about.html">About</a>
+                <a href="new.portfolio.html">Portfolio</a>
+                <a href="new.service.html">Service</a>
+                <a href="new.service.html#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+
+    <h1 id="poort">PORTFOLIOS</h1>
+    <div class="portfolio-space">
+        <h3>Logos</h3>
+        <div class="-port-logo">
+            <img src="871a16d026c2e3e514940b69a9c6b098.jpg" alt="Logo 1">
+            <img src="3cdda64883e8217c7a5da233216902ff.jpg" alt="">
+            <img src="06a7d538942ad18ffa4201b5a85a6b77.jpg" alt="">
+            <img src="382f536473193e4f6e501863be20f22a.jpg" alt="Logo 2">
+            <img src="71e00502d1c43bd10e307b16ffb439c9.jpg" alt="Logo 3">
+            <img src="IMG-20241119-WA0049.jpg" alt="Logo 4">
+            <img src="1c2afd5df5bc136bfbae9ce51386cd5f.jpg" alt="Logo 5">
+            <img src="00675f1d91ed202c1d9b07bbc8b6a41a.jpg" alt="">
+        </div>
+
+        <h3>Brands</h3>
+        <div class="-port-brand">
+            <img src="afec7ec623489f06d08b60de02c3e062.jpg" alt="Brand 1">
+            <img src="bd568ac7a81666af97470b6252cf7b6a.jpg" alt="Brand 2">
+            <img src="fb923814d11a1b2ac060288aec9e1ff8.jpg" alt="Brand 3">
+            <img src="0fef262126d0686026e9850483c109fb.jpg" alt="">
+            <img src="5fcc370a4a53b314ceefe0692d19abd8.jpg" alt="">
+        </div>
+
+        <h3>Users Interface</h3>
+        <div class="-port-ui">
+            <img src="0f9f6d82c4f340fa6082c45feda2acca.jpg" alt="UI 1">
+            <img src="app.jpg" alt="UI 2">
+            <img src="bcfd2da3f6fad02967b4766589c44725.jpg" alt="UI 3">
+            <img src="ab5bf05f7b7b9231a4460607e1e04904.jpg" alt="">
+        </div>
+
+        <h3>Web Designs</h3>
+        <div class="-port-web">
+            <img src="Home design.png" alt="Web Design 1">
+            <img src="b43c6ee6800766eb19c92ec63e2482fa.jpg" alt="Web Design 2">
+            <img src="Fintech Website UI UX Design.jpeg" alt="Web Design 3">
+            <img src="facfb017839c2269f4f9b687c61a626a.jpg" alt="">
+            <img src="c97433d24508a9eb5061a100cc64bc21.jpg" alt="">
+        </div>
+
+        <h3>Product Designs</h3>
+        <div class="-port-product">
+            <img src="7e84d609273c0f2cdf023012541c7ad4.jpg" alt="Product 1">
+            <img src="7429ae424897f6f86360305db8db88c3.jpg" alt="Product 2">
+            <img src="4c4c02a36920d7d1b9684b4aabc0f769.jpg" alt="">
+            <img src="cream.jpg" alt="">
+            <img src="7c4238c43b8d10d22c6c0164e397943f.jpg" alt="">
+            <img src="cfd913c2cb1e14a70212a20763ad505e.jpg" alt="">
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+         $(function(){
+            $(".togo").on("click", function(){
+                if($(".menume").hasClass("active")){
+                    $(".menume").removeClass("active")
+                    $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>");
+            }else{
+                $(".menume").addClass("active");
+                $(this).find("a").html("<ion-icon name='close-outline'></ion-icon>");
+                
+            }
+            });
+        });
+    </script>
+
+<footer style="text-align: center; padding: 10px 0; font-size: 14px;">
+    &copy; 2024 Abdul Muiz. All rights reserved.
+</footer>
+
+</body>
+</html>

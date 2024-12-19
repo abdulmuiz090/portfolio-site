@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="new.portstyle.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+       
+
+        /* Hero Section */
+        .home-space {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .home-space img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            border: 3px solid #0078D7;
+        }
+
+        .home-space h5 {
+            font-size: 1rem;
+            color: #0078D7;
+            margin-bottom: 0.5rem;
+        }
+
+        .home-space h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .home-space h6 {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 1rem;
+        }
+
+        .home-space p {
+            margin-bottom: 0.5rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .home-space .a a {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            color: #fff;
+            background: #0078D7;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 1rem;
+            transition: background 0.3s;
+        }
+
+        .home-space .a a:hover {
+            background: #0056A1;
+        }
+
+        /* Social Links */
+        .sociallink ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            padding: 1rem 0;
+        }
+
+        .sociallink ul li a {
+            color: #0078D7;
+            font-size: 1.5rem;
+            margin: 0 0.5rem;
+            transition: color 0.3s;
+        }
+
+        .sociallink ul li a:hover {
+            color: #0056A1;
+        }
+
+        /* Responsive Design */
+       
+    </style>
+</head>
+<body>
+    <div class="--nav-bar">
+        <h2 id="mylogo">Abdul Muiz</h2>
+        <div class="togo">
+            <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+        </div>
+        <ul class="menume">
+            <li>
+                <a href="new.index.html">Home</a>
+                <a href="new.about.html">About</a>
+                <a href="new.portfolio.html">Portfolio</a>
+                <a href="new.service.html">Service</a>
+                <a href="new.service.html#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+<style>
+    .imag img{
+        border: none;
+        border-radius: 50px;
+        width: 400px;
+        height: 400px;
+    }
+</style>
+    <div class="home-space">
+        <img src="profile.jpg" alt="Your Picture">
+        <h5>HELLO, WELCOME!</h5>
+        <h2>I'M ABDULMUIZ</h2>
+        <h6>Web Developer / Graphic Designer</h6>
+        <p>Bringing Ideas to Life with Creativity and Passion</p>
+        <p>Transforming Ideas into Visual Masterpieces</p>
+        <p>Elevating Your Brand Through Stunning Design</p>
+        <div class="imag"><img src="plans-1867745_1920.jpg" alt=""></div>
+        <div class="a"><a href="test.about.html">More About Me</a></div>
+    </div>
+
+    <div class="sociallink">
+        <ul>
+            <li>
+                <a href="https://www.instagram.com/crystal.academy.101/?__pwa=1"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/2349065478597"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/abdul-muiz-abdulkareem"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://web.facebook.com/LogoLibrary1"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+        </ul>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+         $(function(){
+            $(".togo").on("click", function(){
+                if($(".menume").hasClass("active")){
+                    $(".menume").removeClass("active")
+                    $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>");
+            }else{
+                $(".menume").addClass("active");
+                $(this).find("a").html("<ion-icon name='close-outline'></ion-icon>");
+                
+            }
+            });
+        });
+    </script>
+
+<footer style="text-align: center; padding: 10px 0; font-size: 14px;">
+    &copy; 2024 Abdul Muiz. All rights reserved.
+</footer>
+
+</body>
+</html>
